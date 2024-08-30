@@ -1,6 +1,6 @@
 import React, {useRef} from 'react'
 import  './VideoPlayer.css'
-import vedio from '../../assets/Tiga.mp4'
+import tiga from '../../assets/Tiga.mp4'
 
 const VideoPlayer = ({playState, setPlayState}) => {
 
@@ -14,7 +14,7 @@ const closePlayer = (e)=>{
 
   return (
     <div className={`video-player ${playState?'':'hide'}`} ref={player} onClick={closePlayer}>
-      <video src={vedio} autoPlay muted controls></video>
+      <video src={tiga} autoPlay muted controls></video>
     </div>
   )
 }
